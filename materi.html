@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tirtaloka PKn - Modul Pelajaran</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-custom sticky-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="dashboard.html">
+        <div class="brand-icon-box"><i class="fas fa-table-cells"></i></div>
+        <span class="brand-text">TIRTALOKA PKn</span>
+      </a>
+      <div class="d-flex align-items-center gap-3">
+        <div class="text-end">
+          <div class="fw-bold text-dark" id="userDisplayName">Pengguna</div>
+          <small class="text-success fw-semibold" id="userRole">Siswa</small>
+        </div>
+        <button class="btn btn-logout-circle" onclick="logout()"><i class="fas fa-power-off"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-4">
+    <div class="mb-3">
+      <a href="dashboard.html" class="btn btn-back-dashboard"><i class="fas fa-arrow-left me-1"></i> Dashboard</a>
+    </div>
+
+    <div class="main-panel-card">
+      <div class="row">
+        <div class="col-md-3 border-end pe-md-4 mb-4 mb-md-0" id="sidebarMateri">
+          <h6 class="fw-bold text-dark mb-3">Daftar Modul</h6>
+          <div class="list-group list-group-flush" id="listMateriMenu">
+            <!-- Isi otomatis dari JavaScript -->
+          </div>
+        </div>
+
+        <div class="col-md-9 ps-md-4" id="contentMateriArea">
+          <h4 class="fw-bold text-dark">Pilih Modul</h4>
+          <p class="text-muted">Silakan klik salah satu menu materi di samping kiri.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
